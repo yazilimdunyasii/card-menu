@@ -1,0 +1,134 @@
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:400,500,700,300);
+html, body {
+  position: relative;
+  height: 100%;
+  background: #2B2B2B;
+  color: #2B2B2B;
+}
+
+.home {
+  color: #F7F6F0;
+}
+
+.home, .contact, .about, .team, .projects, .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+section {
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  will-change: transform;
+  cursor: pointer;
+  
+}
+section.on {
+  transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+  border-top-left-radius: 0;
+}
+section.on .content {
+  transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+}
+section.on ~ section {
+  transform: scale3d(1, 1, 1) translate3d(100%, 100%, 0);
+}
+section:nth-child(2) {
+  background: #da6a5b;
+  transform: scale3d(0.95, 1, 1) translate3d(0, 60px, 0);
+}
+section:nth-child(2) .content {
+  transform: scale3d(1.05, 1, 1);
+}
+section.on {
+  transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+  border-top-left-radius: 0;
+}
+section.on .content {
+  transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+}
+section.on ~ section {
+  transform: scale3d(1, 1, 1) translate3d(100%, 100%, 0);
+}
+section:nth-child(3) {
+  background: #e19e56;
+  transform: scale3d(0.9, 1, 1) translate3d(0, 120px, 0);
+}
+section:nth-child(3) .content {
+  transform: scale3d(1.1, 1, 1);
+}
+section.on {
+  transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+  border-top-left-radius: 0;
+}
+section.on .content {
+  transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+}
+section.on ~ section {
+  transform: scale3d(1, 1, 1) translate3d(100%, 100%, 0);
+}
+section:nth-child(4) {
+  background: #dcbd56;
+  transform: scale3d(0.85, 1, 1) translate3d(0, 180px, 0);
+}
+section:nth-child(4) .content {
+  transform: scale3d(1.15, 1, 1);
+}
+section.on {
+  transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+  border-top-left-radius: 0;
+}
+section.on .content {
+  transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+}
+section.on ~ section {
+  transform: scale3d(1, 1, 1) translate3d(100%, 100%, 0);
+}
+section:nth-child(5) {
+  background: #7dce4d;
+  transform: scale3d(0.8, 1, 1) translate3d(0, 240px, 0);
+}
+section:nth-child(5) .content {
+  transform: scale3d(1.2, 1, 1);
+}
+section.on {
+  transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+  border-top-left-radius: 0;
+}
+section.on .content {
+  transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+}
+section.on ~ section {
+  transform: scale3d(1, 1, 1) translate3d(100%, 100%, 0);
+}
+
+.content {
+  transform-origin: top left;
+  transition: transform 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+}
+
+h1 {
+  display: inline-block;
+  font: 40px/80px Alegreya Sans;
+  padding: 0 60px;
+  margin: 10px;
+  border-radius: 60px;
+  transform: scale3d(0.5, 0.5, 0.5);
+  transform-origin: top left;
+  background: rgba(43, 43, 43, 0.1);
+  transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+h1:hover {
+  background: rgba(43, 43, 43, 0.25);
+  transition: background 0.075s ease-in-out, transform 0.3s ease-in-out;
+}
+.on h1 {
+  transform: scale3d(1, 1, 1) translate3d(-30px, 0, 0);
+  background: rgba(43, 43, 43, 0);
+}
